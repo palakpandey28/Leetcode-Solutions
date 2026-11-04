@@ -5,8 +5,10 @@ public:
     int hash1[256];
     int hash2[256];
 
-    fill(hash1, hash1 + 256, -1);
-    fill(hash2, hash2 + 256, -1);
+    for(int i =0;i<256;i++){
+        hash1[i]=-1;
+        hash2[i]=-1;
+    }
 
     for(int i =0;i<n;i++){
         if(hash1[s[i]]!=hash2[t[i]]){
